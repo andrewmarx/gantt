@@ -1,6 +1,6 @@
 ## Simple Gantt chart in R
 
-A simple template for creating a Gantt chart using ggplot2 in R. It's designed to make editing the timeline and labels easy via csv files. There's tons of ways to customize this that are beyond the scope of what I have time to put here.
+A simple template for creating a Gantt chart using ggplot2 in R. It's designed to make editing the timeline and labels easy via csv files. There's tons of ways to customize this that are beyond the scope of what I have time for.
 
 #### Code
 
@@ -41,4 +41,4 @@ ggsave("gantt.png", width = 7, height = 3) # Set dimensions to how big the figur
 
 #### Notes
 
-The example uses integers to represent years (0 is the beginning, 1 is 1 year in, etc). This is arbitrary; you could choose other things for timeline values. For example, you could treat the x-axis as a percentage where 0 is 0% done and 100 is 100% done. The only catch is that whatever you choose, you will probably have to play around the coord_fixed() ratio argument and output dimensions to get everything looking nice.
+The example uses integers to represent years (0 is the beginning, 1 is 1 year in, etc). This is arbitrary; you could choose other things for timeline values. For example, you could treat the x-axis as a percentage where 0 is 0% done and 100 is 100% done. The only catch is that whatever you choose, you will probably have to play around with the coord_fixed() ratio argument and output dimensions to get everything looking nice.
